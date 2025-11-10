@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5N1Katil - Dava Raporu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>5N1Katil: Dava Raporu</h1>
+        <p>Gizemi çözdüğünüze inanıyorsanız, bulgularınızı aşağıdaki forma girin. Başarılı bir dedektif, 70 puan ve üzeri almalıdır.</p>
+
+        <form id="davaFormu">
+            <div class="form-grup">
+                <label for="ne">NE? (Ne oldu?)</label>
+                <textarea id="ne" rows="3"></textarea>
+            </div>
+            
+            <div class="form-grup">
+                <label for="nerede">NEREDE? (Olay nerede gerçekleşti?)</label>
+                <textarea id="nerede" rows="3"></textarea>
+            </div>
+
+            <div class="form-grup">
+                <label for="nezaman">NE ZAMAN? (Olay ne zaman oldu?)</label>
+                <textarea id="nezaman" rows="3"></textarea>
+            </div>
+
+            <div class="form-grup">
+                <label for="neden">NEDEN? (Olayın sebebi, motivasyon neydi?)</label>
+                <textarea id="neden" rows="3"></textarea>
+            </div>
+
+            <div class="form-grup">
+                <label for="nasil">NASIL? (Olay nasıl işlendi?)</label>
+                <textarea id="nasil" rows="3"></textarea>
+            </div>
+
+            <div class="form-grup">
+                <label for="katil">KATİL KİM? (Bu suçu kim işledi?)</label>
+                <textarea id="katil" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Raporu Gönder</button>
+        </form>
+
+        <div id="sonucAlani" class="hidden">
+            <h2 id="sonucBaslik"></h2>
+            <p id="sonucPuan"></p>
+            <p id="sonucMesaj"></p>
+
+            <div id="gercekCevaplar" class="hidden">
+                <h3>Davanın Gerçek Çözümü</h3>
+                <p><strong>NE:</strong> <span id="cevap-ne"></span></p>
+                <p><strong>NEREDE:</strong> <span id="cevap-nerede"></span></p>
+                <p><strong>NE ZAMAN:</strong> <span id="cevap-nezaman"></span></p>
+                <p><strong>NEDEN:</strong> <span id="cevap-neden"></span></p>
+                <p><strong>NASIL:</strong> <span id="cevap-nasil"></span></p>
+                <p><strong>KATİL KİM:</strong> <span id="cevap-katil"></span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
