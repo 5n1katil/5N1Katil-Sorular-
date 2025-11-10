@@ -1,0 +1,94 @@
+/* Google'dan 'Special Elite' yazı tipini çekiyoruz (daktilo gibi) */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+    font-family: 'Special Elite', monospace;
+    background-color: #2c3e50; /* Koyu mavi-gri */
+    color: #ecf0f1; /* Açık gri */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #34495e; /* Daha koyu bir panel */
+    border: 2px solid #7f8c8d;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+h1, h2, h3 {
+    color: #e67e22; /* Vurgu rengi - Turuncu */
+    border-bottom: 1px solid #7f8c8d;
+    padding-bottom: 10px;
+}
+
+.form-grup {
+    margin-bottom: 20px;
+}
+
+.form-grup label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #ecf0f1;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Special Elite', monospace;
+    font-size: 1.1rem;
+    background-color: #ecf0f1; /* Kağıt rengi */
+    color: #2c3e50; /* Mürekkep rengi */
+    border: 1px solid #7f8c8d;
+    border-radius: 3px;
+    box-sizing: border-box; /* Önemli */
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #c0392b; /* Kırmızı - "Kanıt" */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Special Elite', monospace;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e74c3c;
+}
+
+/* JavaScript ile kontrol edilecek sınıflar */
+.hidden {
+    display: none;
+}
+
+#sonucAlani {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px dashed #e67e22;
+}
+
+#gercekCevaplar {
+    margin-top: 20px;
+    background-color: #2c3e50;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Başarı ve Başarısızlık Renkleri */
+.basarili {
+    color: #2ecc71; /* Yeşil */
+}
+
+.basarisiz {
+    color: #e74c3c; /* Kırmızı */
+}
